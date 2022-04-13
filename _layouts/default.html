@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planets of the Universe</title>
-    <link href="{{site.baseurl}}/css/common.css" rel="stylesheet" />
+    <link href="{{site.baseurl}}/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="masthead {{page.mastheadClass}}">
       <h1>Planets of the Universe</h1>
-      {% include nav.html %}
+      {% include nav.html navclass='nav-top'%}
     </header>
 
     {{content}}
 
     <footer>
       <p>&copy; 2013 Planets of Universe</p>
-      {% include nav.html %}
+      {% include nav.html navclass='nav-bottom'%}
     </footer>
   </body>
 </html>

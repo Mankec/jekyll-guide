@@ -2,10 +2,10 @@
 layout: news
 ---
 
-<h1>News</h1>
+<h2>Recently Discovered Planets</h2>
 
 <ul>
-  {% for news in site.categories.news %}
+  {% for news in site.categories.recently-discovered limit:2 %}
   <li>
     <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
     <p>{{news.meta}}</p>
